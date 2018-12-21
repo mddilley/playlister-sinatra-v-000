@@ -28,4 +28,9 @@ class SongsController < ApplicationController
     erb :"/songs/edit"
   end
 
+  patch '/songs/:slug' do
+    binding.pry
+  end
+  
+
 end
