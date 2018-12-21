@@ -1,5 +1,3 @@
-require 'sinatra/flash'
-
 class ApplicationController < Sinatra::Base
   register Sinatra::ActiveRecordExtension
   register Sinatra::Flash
