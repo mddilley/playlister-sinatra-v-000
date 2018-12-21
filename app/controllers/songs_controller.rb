@@ -1,5 +1,3 @@
-require 'sinatra/flash'
-
 class SongsController < ApplicationController
 
   get '/songs' do
