@@ -31,7 +31,7 @@ class SongsController < ApplicationController
   patch '/songs/:slug' do
     binding.pry
     @song = Song.find_slug(params[:slug])
-    @
+    
   end
 
 
