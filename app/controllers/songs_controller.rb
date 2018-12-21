@@ -29,7 +29,6 @@ class SongsController < ApplicationController
   end
 
   patch '/songs/:slug' do
-    binding.pry
     @song = Song.find_slug(params[:slug])
     @song.artist.update(name: => params["Artist Name"])
     @song.genre_ids = params["genres"]
