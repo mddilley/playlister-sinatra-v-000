@@ -1,3 +1,7 @@
+<% if flash.has?(:message) %>
+  <%= flash[:message] %>
+<% end %>
+
 <a href="/songs/<%= @song.slug %>"><h1>Song Name: <%= @song.name %></h1></a>
 
 <p><strong>Artist: <a href="/artists/<%= @artist.slug %>"><%= @artist.name %></a></strong></ul></p>
