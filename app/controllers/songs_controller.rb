@@ -25,7 +25,7 @@ class SongsController < ApplicationController
 
   get '/songs/:id/edit' do
     @song = Song.find_by(:id => params[:id])
-    erb :edit
+    erb :"/songs/edit"
   end
 
 end
