@@ -3,7 +3,8 @@
 <form action="/songs" method="POST">
   <input type="hidden" id="hidden" name="_method" value="patch">
   <p>
-    <label>Song Name</label>
+    <label>Song Name: <%= @song.name %></label>
+    <br><label> Edit:</label>
     <input type="text" name="Name">
   </p>
 
