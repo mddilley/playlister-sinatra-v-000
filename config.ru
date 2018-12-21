@@ -6,7 +6,7 @@ if ActiveRecord::Migrator.needs_migration?
 end
 
 use Rack::MethodOverride
-use Sinatra::Rack
+# use Sinatra::Rack
 use SongsController
 use ArtistsController
 use GenresController
